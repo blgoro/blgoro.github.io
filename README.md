@@ -1,2 +1,0 @@
-# blgoro-web
-Payloads
