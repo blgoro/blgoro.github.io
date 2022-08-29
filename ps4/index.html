@@ -26,13 +26,11 @@
   <script src="simple-notify.min.js"></script>
   <script src="jquery-3.6.0.js"></script>
 
-	<script>
-			window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="Page Caching Started!!";};
-			window.applicationCache.onprogress=function(a){document.getElementById("progress").innerHTML=(Math.round(100*(a.loaded/a.total)))+"%";};
-			window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="Page Cached Successfully!!";setTimeout(function(){document.getElementById("progress").innerHTML="Turn Off the Internet & Reopen the Page !!"; }, 1500);};
-			window.applicationCache.onnoupdate=function(){poc();};
-	        window.applicationCache.onerror=function(){poc();};
-	</script>
+		<script>
+			function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));document.getElementById="display:none";window.progress.innerHTML="Instalando Cache Offline: " + Percent + "%";}
+    function DisplayCacheProgress(){setTimeout(function(){window.progress.innerHTML="Cache Instalado com Successo ✔";},1000);setTimeout(function(){window.progress.innerHTML="Agora Feche e Re-Abra o Navegador...";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+document.cookie = 'kex=1';
+		</script>
     <script>
         function allset() {
             document.getElementById("loader").style.display = "none";
