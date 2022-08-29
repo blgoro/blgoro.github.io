@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html manifest="cache.manifest">
+<head>
+<meta charset="UTF-8" />
+<link rel="shortcut icon" href="img/favicon.png" />
+<title>Linux PS4 9.00</title>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/font.css">
+<link rel="stylesheet" href="css/simple-notify.min.css" />
+<style> 
+    html, body{
+      background: url('img/bg1.png');
+      background-attachment: fixed;
+      margin:auto;
+      font-size:20px;
+      font-weight:lighter;
+      color:#FFFFFF;
+      background-color: #000;
+      background-attachment: fixed;
+      background-size:100% 100%;
+      background-repeat:no-repeat;
+}
+</style>
+  <script type="text/javascript" src="main.js"></script>
+  <script src="simple-notify.min.js"></script>
+  <script src="jquery-3.6.0.js"></script>
+
+		<script>
+			function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));document.getElementById="display:none";window.progress.innerHTML="Instalando Cache Offline: " + Percent + "%";}
+    function DisplayCacheProgress(){setTimeout(function(){window.progress.innerHTML="Cache Instalado com Successo ✔";},1000);setTimeout(function(){window.progress.innerHTML="Agora Feche e Re-Abra o Navegador...";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+document.cookie = 'kex=1';
+		</script>
+
+</head>
+<body onload="go()">
+<h1 class="progress" id="progress">Linux PS4 9.00</h1>
+<hr>
+
+<div style="text-align:center">
+  <a href="index.html" >
+    <button class="btn btn-main" onmouseout="progress.innerHTML='Jailbreak PS4 9.00'" onMouseOver="progress.innerHTML='Volver atras'";   type="button"><img class="icone" src="img/HenEnable.png" /><br> Menu principal </button></a>
+
+  </div>
+
+<br>
+<hr style="width: 50%"><h1 style="color:#00FF12;" >PAYLOADS</h1><hr style="width: 50%">
+
+<a id="button-Payload" onmouseout="progress.innerHTML='Jailbreak 9.00'" onMouseOver="progress.innerHTML='Ejecuta linux en PS4'"; onclick="load_Linux1()"><button class="btn" href="" ><img class="icone" src="img/linux.png" /><br> Linux 1GB </button></a>
+
+<a id="button-Payload" onmouseout="progress.innerHTML='Jailbreak 9.00'" onMouseOver="progress.innerHTML='Ejecuta linux en PS4'";  onclick="load_Linux2()"><button class="btn" href=""><img class="icone" src="img/linux.png" /><br> Linux 2GB </button></a>
+
+<a id="button-Payload" onmouseout="progress.innerHTML='Jailbreak 9.00'" onMouseOver="progress.innerHTML='Ejecuta linux en PS4'"; onclick="load_Linux3()"><button class="btn" href="" ><img class="icone" src="img/linux.png" /><br> Linux 3GB </button></a>
+
+<a id="button-Payload" onmouseout="progress.innerHTML='Jailbreak 9.00'" onMouseOver="progress.innerHTML='Ejecuta linux en PS4'"; onclick="load_Linux4()"><button href="" class="btn" ><img class="icone" src="img/linux.png" /><br> Linux 4GB </button></a>
+
+<a id="button-Payload" onmouseout="progress.innerHTML='Jailbreak 9.00'" onMouseOver="progress.innerHTML='Ejecuta linux en PS4'"; onclick="load_Linux5()"><button href="" class="btn" ><img class="icone" src="img/linux.png" /><br> Linux 5GB </button></a>
+
+<br><br>
+
+<script>
+
+
+
+function load_Linux1(){
+    progress.innerHTML="Cargando Payload Espere....";
+    PLfile = "LinuxLoader1gb.bin";
+    LoadviaGoldhen(PLfile);
+}
+function load_Linux2(){
+    progress.innerHTML="Cargando Payload Espere....";
+    PLfile = "LinuxLoader2gb.bin";
+    LoadviaGoldhen(PLfile);
+}
+function load_Linux3(){
+    progress.innerHTML="Cargando Payload Espere....";
+    PLfile = "LinuxLoader3gb.bin";
+    LoadviaGoldhen(PLfile);
+}
+function load_Linux4(){
+    progress.innerHTML="Cargando Payload Espere....";
+    PLfile = "LinuxLoader4gb.bin";
+    LoadviaGoldhen(PLfile);
+}
+function load_Linux5(){
+    progress.innerHTML="Cargando Payload Espere....";
+    PLfile = "LinuxLoader5gb.bin";
+    LoadviaGoldhen(PLfile);
+}
+
+</script>	 
+</div>
+</body>
+
+</html>
